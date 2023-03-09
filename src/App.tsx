@@ -1,9 +1,10 @@
 import "./App.css";
+import Delivery from "./components/Delivery";
 
 function App() {
     return (
         <div className="App">
-
+            <Delivery />
         </div>
     )
 }
