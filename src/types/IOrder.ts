@@ -9,3 +9,8 @@ export interface IOrder {
     from: string,
     to: string,
 }
+
+export type OrderState = {
+    orders: IOrder[],
+    isLoading: boolean,
+}

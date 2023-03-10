@@ -7,3 +7,8 @@ export interface IFood {
     price: number,
     cafeId: string,
 }
+
+export type FoodState = {
+    food: IFood[],
+    isLoading: boolean,
+}

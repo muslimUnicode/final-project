@@ -11,6 +11,8 @@ export interface IClient {
 
 export type ClientState = {
     user: IClient,
+    token: string,
+    id: string,
     isLoading: boolean,
     isAuth: boolean,
 }

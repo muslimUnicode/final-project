@@ -12,3 +12,9 @@ export interface ICafe {
     role: string,
     menu: IFood[],
 }
+
+export type CafeState = {
+    user: ICafe,
+    isLoading: boolean,
+    isAuth: boolean,
+}
