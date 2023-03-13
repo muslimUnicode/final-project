@@ -1,0 +1,39 @@
+.input {
+    h4 {
+        margin: 32px 0 16px;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: #FFFFFF;
+    }
+
+    input {
+        width: 440px;
+        height: 52px;
+        background: 0;
+        border: 1px solid #706F6F;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width: 376px) {
+    .input {
+        h4 {
+            margin: 32px 0 16px;
+            font-family: 'Inter';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    
+        input {
+            width: 311px;
+            height: 52px;
+            background: 0;
+            border: 1px solid #706F6F;
+            border-radius: 15px;
+        }
+    }
+}
