@@ -1,7 +1,8 @@
 import React from "react";
 import "./footer.scss";
-import footerArrow from "../assets/icon/footerArrow.svg";
-import logo from "../assets/icon/logo.svg";
+import "./footermedia.scss";
+import footerArrow from "../../assets/icon/footerArrow.svg";
+import logo from "../../assets/icon/logo.svg";
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
         <img src={footerArrow} />
       </div>
       <div className="footer__config">
-        <img src={logo} alt="" />
+        <img src={logo} />
         <p>© ООО СК «АПШЕРОН»<br /> Все права защищены. 2010-2020</p>
         <a href="">Пользовательское соглашение</a>
         <a href="">Карта сайта</a>
