@@ -7,7 +7,7 @@ import { IAuth } from "../../../types/IAuth";
 
 export const clientSignUp = createAsyncThunk<string, IReg>(
     "client/sign-up",
-    async function (userData) {
+    async (userData) => {
         const res = await baseService.post("/client/signup", userData)
         return res.data
     }
@@ -15,7 +15,7 @@ export const clientSignUp = createAsyncThunk<string, IReg>(
 
 export const clientSignIn = createAsyncThunk<{token: string, id: string, role: string}, IAuth>(
     "/sign-in",
-    async function (userData) {
+    async (userData) => {
         const res = await baseService.post("/signin", userData)
         return res.data
     }

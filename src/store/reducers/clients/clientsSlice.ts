@@ -1,21 +1,22 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { CafeState } from "../../../types/ICafe";
 import { IClient, ClientState } from "../../../types/IClient";
 import { clientSignIn, clientSignUp, getClientById } from "./clientsAction";
 
 
-const initialState: ClientState = {
+const initialState: ClientState | CafeState = {
     user: {
         _id: "",
         name: "",
+        image: "",
         phone: "",
         city: "",
         address: "",
         mail: "",
         password: "",
         role: "",
+        menu: [],
     },
-    token: "",
-    id: "",
     isLoading: false,
     isAuth: false,
 }
@@ -47,8 +48,6 @@ export const userSlice = createSlice({
             state.isLoading = true
         })
         builder.addCase(clientSignIn.fulfilled, (state, action) => {
-            state.token = action.payload.token
-            state.id = action.payload.id
             state.user.role = action.payload.role
             state.isLoading = false
         })
