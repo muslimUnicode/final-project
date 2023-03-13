@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form"
+import { Link } from "react-router-dom"
 import Input from "../../components/input/Input"
 import { useAppDispatch } from "../../hooks/hooks"
 import { clientSignIn } from "../../store/reducers/clients/clientsAction"
@@ -16,12 +17,16 @@ const SignIn = () => {
     return(
         <div className="sign-in">
             <div className="sign-in-form">
-                
+                <h1>Войти</h1>
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Input label={"Электронная почта"} register={register} name="mail" type="email"/>
                     <Input label={"Пароль"} register={register} name="password" type="password"/>
                     <button type="submit">Войти</button>
                 </form>
+                <div className="have-not-account">
+                    <span className="have-not-account-span">Нет аккаунта?</span>
+                    <Link to="/sign-up-client" className="sign-up-link">Зарегистрироваться</Link>
+                </div>
             </div>
         </div>
     )
