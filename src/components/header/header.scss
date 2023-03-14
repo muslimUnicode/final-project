@@ -1,0 +1,144 @@
+header {
+    height: 99px;
+    display: flex;
+    align-items: center;
+    background: #403c3b;
+    .logo {
+        margin-right: 70px;
+        margin-left: 100px;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 0.15em;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .form__input {
+        cursor: pointer;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        width: 555px;
+        height: 52px;
+        background: #504b4a;
+        border-radius: 10px;
+        .input__location {
+            margin-left: 14px;
+        }
+        .input__search {
+            outline: none;
+            width: 85%;
+            margin-left: 10px;
+            padding: 0;
+            border: 0;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #cfcfcf;
+            background: 0;
+        }
+        .input__search::placeholder {
+            color: #cfcfcf;
+        }
+        .input__search::-webkit-search-cancel-button {
+            display: none;
+        }
+        .button__search {
+            margin-right: 17px;
+        }
+    }
+
+    .telefon {
+        display: flex;
+        align-items: center;
+        margin-right: 51px;
+        .call {
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+            border-radius: 100%;
+        }
+        p {
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #cfcfcf;
+            span {
+                font-family: "Gilroy";
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ffffff;
+            }
+        }
+    }
+    .profil {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        button {
+            margin-left: 13px;
+            height: 52px;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+            background: 0;
+            border: 0;
+            border-left: 1px solid #635c5a;
+        }
+    }
+
+    .basket {
+        margin-right: 70px;
+        padding-left: 24px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        width: 149px;
+        height: 52px;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        border: 0;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        .vert__line {
+            margin-left: 20px;
+            margin-right: 12px;
+            height: 38px;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .quantity {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 100%;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: #403c3b;
+        }
+    }
+}
