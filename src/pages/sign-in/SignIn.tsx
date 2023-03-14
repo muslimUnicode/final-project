@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form"
 import { Link } from "react-router-dom"
 import Input from "../../components/input/Input"
+import SignButton from "../../components/sign-button/SignButton"
 import { useAppDispatch } from "../../hooks/hooks"
 import { clientSignIn } from "../../store/reducers/clients/clientsAction"
 import { IAuth } from "../../types/IAuth"
@@ -21,7 +22,7 @@ const SignIn = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     <Input label={"Электронная почта"} register={register} name="mail" type="email"/>
                     <Input label={"Пароль"} register={register} name="password" type="password"/>
-                    <button type="submit">Войти</button>
+                    <SignButton text="Войти"></SignButton>
                 </form>
                 <div className="have-not-account">
                     <span className="have-not-account-span">Нет аккаунта?</span>
