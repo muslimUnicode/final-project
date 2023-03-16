@@ -3,8 +3,8 @@ import { NavLink, Link } from "react-router-dom";
 import Input from "../../components/input/Input"
 import SignButton from "../../components/sign-button/SignButton";
 import { useAppDispatch } from "../../hooks/hooks";
-import { clientSignUp } from "../../store/reducers/clients/clientsAction";
-import { IReg } from "../../types/IReg";
+import { userSignUp } from "../../store/reducers/user/userAction";
+import { IReg } from "../../types/IUser";
 import "./SignUpClient.scss"
 
 const SignUpClient = () => {
@@ -12,7 +12,7 @@ const SignUpClient = () => {
     const dispatch = useAppDispatch()
 
     const onSubmit = (data: IReg) => {
-        dispatch(clientSignUp(data))
+        dispatch(userSignUp({userData: data, role: "client"}))
     }
 
     return(

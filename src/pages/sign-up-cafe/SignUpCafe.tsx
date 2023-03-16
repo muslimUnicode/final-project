@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom"
 import Input from "../../components/input/Input"
 import SignButton from "../../components/sign-button/SignButton"
 import { useAppDispatch } from "../../hooks/hooks"
-import { cafeSignUp } from "../../store/reducers/cafes/cafesAction"
-import { IReg } from "../../types/IReg"
+import { userSignUp } from "../../store/reducers/user/userAction"
+import { IReg } from "../../types/IUser"
 import "./SignUpCafe.scss"
 
 const SignUpCafe = () => {
@@ -12,7 +12,7 @@ const SignUpCafe = () => {
     const dispatch = useAppDispatch()
 
     const onSubmit = (data: IReg) => {
-        dispatch(cafeSignUp(data))
+        dispatch(userSignUp({userData: data, role: "cafe"}))
     }
 
     return(

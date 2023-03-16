@@ -1,9 +1,9 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { ICafe, CafeState } from "../../../types/ICafe";
-import { cafeSignUp, getCafeById } from "./cafesAction";
+import { IUser, UserState } from "../../../types/IUser";
+import { userSignUp, getCafeById, getClientById } from "./userAction";
 
 
-const initialState: CafeState = {
+const initialState: UserState = {
     user: {
         _id: "",
         name: "",
@@ -14,7 +14,6 @@ const initialState: CafeState = {
         mail: "",
         password: "",
         role: "",
-        menu: [],
     },
     isLoading: false,
     isAuth: false,
@@ -44,28 +43,28 @@ export const userSlice = createSlice({
         builder.addCase(getCafeById.pending, (state) => {
             state.isLoading = true
         })
-        builder.addCase(getCafeById.fulfilled, (state, action: PayloadAction<ICafe>) => {
-            state.user._id = action.payload._id
-            state.user.address = action.payload.address
-            state.user.city = action.payload.city
-            state.user.mail = action.payload.mail
-            state.user.name = action.payload.name
-            state.user.password = action.payload.password
-            state.user.phone = action.payload.phone
-            state.user.role = action.payload.role
+        builder.addCase(getCafeById.fulfilled, (state, action: PayloadAction<IUser>) => {
+            state.user = action.payload
+            state.isLoading = false
+        })
+        builder.addCase(getClientById.pending, (state) => {
+            state.isLoading = true
+        })
+        builder.addCase(getClientById.fulfilled, (state, action: PayloadAction<IUser>) => {
+            state.user = action.payload
             state.isLoading = false
         })
         builder.addCase(getCafeById.rejected, (state) => {
             state.isLoading = false
         })
-        builder.addCase(cafeSignUp.pending, (state) => {
+        builder.addCase(userSignUp.pending, (state) => {
             state.isLoading = true
         })
-        builder.addCase(cafeSignUp.fulfilled, (state, action) => {
+        builder.addCase(userSignUp.fulfilled, (state, action) => {
             state.isLoading = false
             window.location.href = "/sign-in"
         })
-        builder.addCase(cafeSignUp.rejected, (state, action) => {
+        builder.addCase(userSignUp.rejected, (state, action) => {
             state.isLoading = false
         })
     }
