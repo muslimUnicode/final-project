@@ -3,8 +3,8 @@ import { Link } from "react-router-dom"
 import Input from "../../components/input/Input"
 import SignButton from "../../components/sign-button/SignButton"
 import { useAppDispatch } from "../../hooks/hooks"
-import { clientSignIn } from "../../store/reducers/clients/clientsAction"
-import { IAuth } from "../../types/IAuth"
+import { userSignIn } from "../../store/reducers/user/userAction"
+import { IAuth } from "../../types/IUser"
 import "./SignIn.scss"
 
 const SignIn = () => {
@@ -12,7 +12,7 @@ const SignIn = () => {
     const dispatch = useAppDispatch()
 
     const onSubmit = (data: IAuth) => {
-        dispatch(clientSignIn(data))
+        dispatch(userSignIn(data))
     }
     
     return(

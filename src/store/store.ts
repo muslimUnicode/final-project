@@ -1,8 +1,10 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
-import clientsSlice from './reducers/clients/clientsSlice';
+import basketSlice from './reducers/basket/basketSlice';
+import userSlice from './reducers/user/userSlice';
 
 const rootReducer = combineReducers({
-  client: clientsSlice,
+  user: userSlice,
+  basket: basketSlice,
 })
 
 export const store = configureStore({
