@@ -1,8 +1,11 @@
 header {
-    height: 99px;
+    padding: 16px 0;
     display: flex;
     align-items: center;
     background: #403c3b;
+    .burger__menu {
+        display: none;
+    }
     .logo {
         margin-right: 70px;
         margin-left: 100px;
@@ -68,6 +71,7 @@ header {
             border-radius: 100%;
         }
         p {
+            width: 130px;
             font-family: "Gilroy";
             font-style: normal;
             font-weight: 400;
@@ -126,6 +130,7 @@ header {
             border-left: 1px solid rgba(255, 255, 255, 0.3);
         }
         .quantity {
+            margin-right: 6px;
             display: flex;
             justify-content: center;
             align-items: center;

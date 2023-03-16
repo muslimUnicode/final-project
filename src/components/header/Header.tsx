@@ -1,14 +1,21 @@
 import React from "react";
 import "./header.scss";
+import "./header-media.scss";
 import location from '../../assets/location.svg';
 import search from '../../assets/search.svg';
 import calling from '../../assets/calling.svg';
-import profile from '../../assets/profile.svg';
+import profile from "../../assets/profile.svg";
 
 const Header = () => {
   return (
     <div className="header">
       <header>
+        <div className="burger__menu">
+          <div className="burger">
+          <span></span>
+          </div>
+          <h3>Меню</h3>
+        </div>
         <h2 className="logo">Logos</h2>
         <label className="form__input" htmlFor='search'>
             <img className="input__location" src={location} alt="" />
