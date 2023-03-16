@@ -1,6 +1,6 @@
 import React from "react";
 import pizza from "../../../assets/pizza.png";
-import buy from "../../../assets/buy.svg";
+import buy from "../../../assets/Buy.svg";
 
 const CardItem = () => {
   return (
