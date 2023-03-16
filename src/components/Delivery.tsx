@@ -7,11 +7,11 @@ import { useState } from "react";
 
 const Delivery: React.FC = () => {
 
-  const [clicked, setClicked] = useState<string>("");
+  const [clicked, setClicked] = useState<number | null>(null);
 
   const handleToggle = (index: number): void => {
     if (clicked === index) {
-     return setClicked("");
+     return setClicked(null);
     }
     setClicked(index);
    };
