@@ -1,6 +1,6 @@
 import React from 'react';
 import CardsList from '../../components/CardsList/CardsList';
-import Footer from '../../components/Footer';
+import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import ReviewsList from '../../components/Review/ReviewsList';
 import './homePage.scss';

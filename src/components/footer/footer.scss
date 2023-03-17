@@ -1,6 +1,7 @@
 .footer {
     display: flex;
     align-items: center;
+    width: 1440px;
     height: 195px;
     background: linear-gradient(270.7deg, #44403f 0.4%, #211f20 100%);
     .footer__arrow {
@@ -19,7 +20,7 @@
         flex-direction: column;
         align-items: flex-start;
         p {
-            font-family: "Gilroy";
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 12px;
@@ -29,13 +30,15 @@
         }
         a {
             margin-bottom: 10px;
-            font-family: "Gilroy";
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
             color: #ffffff;
             text-decoration: none;
+            border-bottom: 1px solid #656362;
+            padding-bottom: 2px;
         }
         a:last-child {
             margin: 0;
@@ -44,7 +47,7 @@
     ul {
         display: flex;
         li {
-            font-family: "Gilroy";
+            font-family: "Gilroy", sans-serif;
             font-style: normal;
             font-weight: 500;
             font-size: 20px;
