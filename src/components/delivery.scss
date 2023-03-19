@@ -6,8 +6,6 @@
         margin: 0 0 40px 0;
         padding-left: 20px;
         border-left: 4px solid #618967;
-        font-family: "Open Sans";
-        font-style: normal;
         font-weight: 700;
         font-size: 32px;
         line-height: 39px;
@@ -28,7 +26,6 @@
 
     .delivery__schedule {
         margin-top: 40px;
-        font-family: "Gilroy", sans-serif;
         color: #ffffff;
         .schedule__header {
             display: flex;
@@ -40,8 +37,6 @@
                     margin-bottom: 10px;
                 }
                 span {
-                    font-style: normal;
-                    font-weight: 400;
                     font-size: 22px;
                     line-height: 35px;
                     color: #cfcfcf;
@@ -60,8 +55,6 @@
         p {
             width: 700px;
             margin: 0;
-            font-style: normal;
-            font-weight: 400;
             font-size: 22px;
             line-height: 35px;
             color: #cfcfcf;
