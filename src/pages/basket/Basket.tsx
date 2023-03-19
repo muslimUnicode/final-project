@@ -55,7 +55,7 @@ const Basket = () => {
                             <span>Минимальная сума заказа 1500 ₽</span>
                         </div>
                     </div>
-                    <div className="checkout">Оформить заказ</div>
+                    <Link to="/ordering" className="checkout">Оформить заказ</Link>
                 </div>
             </div>
             <Footer />
