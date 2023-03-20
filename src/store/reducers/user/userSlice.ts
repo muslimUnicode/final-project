@@ -1,6 +1,7 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import Cookies from "js-cookie";
 import { IUser, UserState } from "../../../types/IUser";
-import { userSignUp, getCafeById, getClientById } from "./userAction";
+import { userSignUp, getCafeById, getClientById, userSignIn } from "./userAction";
 
 
 const initialState: UserState = {
@@ -23,23 +24,23 @@ export const userSlice = createSlice({
     name: "user",
     initialState,
     reducers: {
-        // logoutReducer: (state) => {
-        //     state.user.token = ""
-        //     state.user._id = ""
-        //     state.user.avatar = ""
-        //     state.user.username = ""
-        //     state.isLoading = false
-        // }
+        logoutReducer: (state) => {
+            Cookies.remove("token")
+            Cookies.remove("role")
+            state.isLoading = false
+        }
     },
     extraReducers: (builder) => {
-        // builder.addCase(CafeSignIn.pending, (state) => {
-        //     state.isLoading = true
-        // })
-        // builder.addCase(CafeSignIn.fulfilled, (state, action: PayloadAction<ICafe>) => {
-        //     state.user = action.payload
-        //     state.isLoading = false
-        //     state.isAuth = true
-        // });
+        builder.addCase(userSignIn.pending, (state) => {
+            state.isLoading = true
+        })
+        builder.addCase(userSignIn.fulfilled, (state, action: PayloadAction<{token: string, id: string, role: string}>) => {
+            Cookies.set("role", action.payload.role)
+            Cookies.set("token", action.payload.token)
+            console.log("signed-in");
+            state.isLoading = false
+            state.isAuth = true
+        });
         builder.addCase(getCafeById.pending, (state) => {
             state.isLoading = true
         })

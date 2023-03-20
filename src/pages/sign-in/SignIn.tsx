@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Input from "../../components/input/Input"
 import SignButton from "../../components/sign-button/SignButton"
 import { useAppDispatch } from "../../hooks/hooks"
@@ -10,9 +10,11 @@ import "./SignIn.scss"
 const SignIn = () => {
     const { register, handleSubmit, formState: {errors, isValid}, reset } = useForm<IAuth>()
     const dispatch = useAppDispatch()
+    const navigate = useNavigate()
 
     const onSubmit = (data: IAuth) => {
         dispatch(userSignIn(data))
+        navigate("/")
     }
     
     return(

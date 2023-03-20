@@ -5,7 +5,7 @@ import backArrow from "../../assets/back-arrow.svg"
 import deleteDish from "../../assets/delete-dish.svg"
 import minus from "../../assets/minus.svg"
 import plus from "../../assets/plus.svg"
-import Footer from "../../components/Footer"
+import Footer from "../../components/footer/Footer"
 
 const Basket = () => {
     const basket = useAppSelector(state => state.basket.dishes)

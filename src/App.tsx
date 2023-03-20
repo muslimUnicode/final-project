@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Delivery from "./components/Delivery";
+import Delivery from "./pages/delivery/Delivery";
 import Basket from "./pages/basket/Basket";
 import HomePage from "./pages/home-page/HomePage";
 import Ordering from "./pages/ordering/Ordering";

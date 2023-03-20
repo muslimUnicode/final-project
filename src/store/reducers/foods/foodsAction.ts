@@ -4,7 +4,7 @@ import { IFood } from "../../../types/IFood";
 
 export const getFood = createAsyncThunk(
     "food/get/all",
-    async function () {
+    async () => {
         const res = await baseService.get<IFood[]>("/food")
         return res.data
     }
@@ -12,7 +12,7 @@ export const getFood = createAsyncThunk(
 
 export const getFoodById = createAsyncThunk(
     "food/get",
-    async function (id) {
+    async (id) => {
         const res = await baseService.get<IFood>(`/food/${id}`)
         return res.data
     }
