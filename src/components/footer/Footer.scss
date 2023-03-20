@@ -1,8 +1,11 @@
 .footer {
+    margin: auto;
     display: flex;
     align-items: center;
+    width: 1440px;
     height: 195px;
     background: linear-gradient(270.7deg, #44403f 0.4%, #211f20 100%);
+    
     .footer__arrow {
         display: flex;
         justify-content: center;
@@ -11,35 +14,49 @@
         height: 64px;
         background: #ffffff;
         border-radius: 100%;
-        margin-right: 55px;
         margin-left: 40px;
     }
+    
     .footer__config {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin: 0 157px 0 55px;
+    
         p {
+            font-family: "Gilroy", sans-serif;
+            font-style: normal;
             font-weight: 500;
             font-size: 12px;
             line-height: 14px;
             color: #cfcfcf;
             margin-bottom: 5px;
         }
+    
         a {
             margin-bottom: 10px;
+            font-family: "Gilroy", sans-serif;
+            font-style: normal;
             font-weight: 500;
             font-size: 14px;
             line-height: 16px;
             color: #ffffff;
             text-decoration: none;
+            border-bottom: 1px solid #656362;
+            padding-bottom: 2px;
         }
+    
         a:last-child {
             margin: 0;
         }
     }
+    
     ul {
         display: flex;
+    
         li {
+            font-family: "Gilroy", sans-serif;
+            font-style: normal;
             font-weight: 500;
             font-size: 20px;
             line-height: 24px;
@@ -47,8 +64,61 @@
             list-style: none;
             margin-right: 30px;
         }
+    
         li:last-child {
             margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        height: 229px;
+    
+        ul {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .footer {
+        display: flex;
+        align-items: flex-start;
+    
+        .footer__arrow {
+            max-width: 54px;
+            max-height: 54px;
+            margin: 30px 17px;
+    
+            img {
+                width: 35%;
+            }
+        }
+    
+        .footer__config {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 27px;
+    
+            img {
+                margin-bottom: 25px;
+            }
+    
+            p {
+                text-align: center;
+                margin-bottom: 13px;
+                color: #CFCFCF;
+            }
+
+            a {
+                border-bottom: 1px solid #656362;
+            }
+        }
+
+        ul {
+            display: none;
         }
     }
 }

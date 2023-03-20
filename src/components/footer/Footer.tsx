@@ -1,8 +1,11 @@
 import "./Footer.scss";
 import footerArrow from "../../assets/icon/footerArrow.svg";
 import logo from "../../assets/icon/logo.svg";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate()
+  
   return (
     <div className="footer">
         <div className="footer__arrow">
@@ -17,7 +20,7 @@ const Footer = () => {
         </div>
         <ul>
             <li>О ресторане</li>
-            <li>Условия доставки</li>
+            <li onClick={() => navigate("/delivery")}>Условия доставки</li>
             <li>Возврат товара</li>
             <li>Акции</li>
         </ul>
