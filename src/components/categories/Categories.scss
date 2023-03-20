@@ -1,4 +1,6 @@
 .categories {
+    margin: auto;
+    width: 1440px;
 
     .load-more {
         display: flex;
@@ -13,5 +15,6 @@
         font-weight: 600;
         font-size: 25px;
         line-height: 30px;
+        margin-bottom: 46px;
     }
 }

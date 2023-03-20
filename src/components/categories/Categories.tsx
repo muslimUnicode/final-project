@@ -14,7 +14,7 @@ const Categories = () => {
     return(
         <div className="categories">
             {categories.map(category => <Category category={category} key={category._id}/>).slice(0, categoryCount)}
-            {categoryCount < 9 && <div className="load-more" onClick={() => loadMore()}>Показать больше категорий</div>}
+            {categoryCount < categories.length && <div className="load-more" onClick={() => loadMore()}>Показать больше категорий</div>}
         </div>
     )
 }

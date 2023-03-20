@@ -1,0 +1,275 @@
+header {
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #403c3b;
+
+    .burger__menu {
+        display: none;
+    }
+    
+    .logo {
+        margin-right: 70px;
+        margin-left: 100px;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 25px;
+        letter-spacing: 0.15em;
+        color: #ffffff;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    .form__input {
+        cursor: pointer;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        width: 555px;
+        height: 52px;
+        background: #504b4a;
+        border-radius: 10px;
+    
+        .input__location {
+            margin-left: 14px;
+        }
+    
+        .input__search {
+            outline: none;
+            width: 85%;
+            margin-left: 10px;
+            padding: 0;
+            border: 0;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #cfcfcf;
+            background: 0;
+        }
+    
+        .input__search::placeholder {
+            color: #cfcfcf;
+        }
+    
+        .input__search::-webkit-search-cancel-button {
+            display: none;
+        }
+    
+        .button__search {
+            margin-right: 17px;
+        }
+    }
+
+    .telephone {
+        display: flex;
+        align-items: center;
+        margin-right: 51px;
+    
+        .call {
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+            border-radius: 100%;
+        }
+    
+        p {
+            width: 130px;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 20px;
+            color: #cfcfcf;
+    
+            span {
+                font-family: "Gilroy";
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .profile {
+        height: 52px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    
+        button {
+            margin-left: 13px;
+            height: 52px;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+            background: 0;
+            border: 0;
+            border-left: 1px solid #635c5a;
+            padding-left: 9px;
+            cursor: pointer;
+        }
+    }
+
+    .basket {
+        margin-right: 70px;
+        padding-left: 24px;
+        display: flex;
+        align-items: center;
+        margin-left: 40px;
+        width: 149px;
+        height: 52px;
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+        border-radius: 10px;
+        border: 0;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #ffffff;
+        cursor: pointer;
+    
+        .vert__line {
+            margin-left: 20px;
+            margin-right: 12px;
+            height: 38px;
+            border-left: 1px solid rgba(255, 255, 255, 0.3);
+        }
+    
+        .quantity {
+            margin-right: 6px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 100%;
+            font-family: "Gilroy";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 14px;
+            color: #403c3b;
+        }
+    }
+}
+
+@media screen and (max-width: 390px) {
+    header {
+        position: relative;
+        padding: 10px 0 80px 0;
+    
+        .burger__menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-left: 26px;
+            cursor: pointer;
+    
+            .burger {
+                width: 25px;
+                height: 15px;
+                position: relative;
+            }
+
+            .burger span {
+                position: absolute;
+                width: 25px;
+                height: 3px;
+                top: 6px;
+                background-color: #65906c;
+                border-radius: 50px;
+            }
+
+            .burger::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                width: 25px;
+                background-color: #65906c;
+                height: 3px;
+                border-radius: 50px;
+            }
+
+            .burger::after {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                width: 25px;
+                background-color: #65906c;
+                height: 3px;
+                border-radius: 50px;
+            }
+    
+            h3 {
+                margin: 5px 0 0 0;
+                font-family: "Gilroy";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: #fff;
+                text-transform: uppercase;
+            }
+        }
+    
+        .logo {
+            margin-left: 70px;
+            margin-right: 60px;
+        }
+
+        .form__input {
+            width: 40%;
+            min-width: 345px;
+            position: absolute;
+            top: 90px;
+            margin: 0 15px;
+        }
+
+        .telefon {
+            display: none;
+        }
+    
+        .profil {
+            display: none;
+        }
+
+        .basket {
+            flex-direction: column-reverse;
+            width: 62px;
+            height: 56px;
+            margin: 0 15px 0 0;
+            padding: 7px;
+            font-size: 12px;
+            line-height: 14px;
+            text-transform: lowercase;
+            background: url('../../assets/buy.svg') no-repeat 50% 10%, linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+            
+            .vert__line {
+                width: 100%;
+                margin: 6px 0 2px 0;
+                border-left: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+            }
+
+            .quantity {
+                display: none;
+            }
+        }
+    }
+}

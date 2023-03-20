@@ -1,10 +1,40 @@
 import "./Delivery.scss";
 import AccordionItem from "../../components/accordion-item/AccordionItem";
 import map from "../../assets/map.png";
-import {faqs} from '../../db/dataInput'
 import { useState } from "react";
 
 const Delivery: React.FC = () => {
+  const faqs = [
+    {
+      title: "У наших курьеров всегда должна быть сдача!",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    },{
+      title: "Вам что-то не довезли?",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    },
+    {
+      title: "Не понравился продукт?",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    },
+    {
+      title: "Если появились замечания",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    },
+    {
+      title: "Оплата Visa, MasterCard и МИР",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    },
+    {
+      title: "Реквизиты",
+      content:
+        "Мы очень внимательно следим за качеством нашей работы, поэтому, если у вас будут какие-либо замечания или предложения, то обязательно сообщайте их нам",
+    }
+  ];
 
   const [clicked, setClicked] = useState<number | null>(null);
 
@@ -21,9 +51,9 @@ const Delivery: React.FC = () => {
       <div className="delivery__form">
 
         <ul className="form__input">
-        {faqs.map((faq, index: number) => (
-        <AccordionItem onToggle={() => handleToggle(index)} active={clicked === index} key={index} faq={faq} />
-      ))}
+          {faqs.map((faq, index: number) => (
+            <AccordionItem onToggle={() => handleToggle(index)} active={clicked === index} key={index} faq={faq} />
+          ))}
         </ul>
 
         <img className="map" src={map} alt="" />

@@ -1,5 +1,6 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
 import basketSlice from './reducers/basket/basketSlice';
+import cafesSlice from './reducers/cafes/cafesSlice';
 import categoriesSlice from './reducers/categories/categoriesSlice';
 import foodsSlice from './reducers/foods/foodsSlice';
 import userSlice from './reducers/user/userSlice';
@@ -9,6 +10,7 @@ const rootReducer = combineReducers({
     basket: basketSlice,
     categories: categoriesSlice,
     foods: foodsSlice,
+    cafes: cafesSlice,
 })
 
 export const store = configureStore({
