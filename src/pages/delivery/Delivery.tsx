@@ -1,8 +1,7 @@
-import "./delivery.scss";
-import AccordionItem from "./AccordionItem";
-import map from "../assets/map.png";
-import './accordeonItem.scss';
-import {faqs} from '../db/dataInput'
+import "./Delivery.scss";
+import AccordionItem from "../../components/accordion-item/AccordionItem";
+import map from "../../assets/map.png";
+import {faqs} from '../../db/dataInput'
 import { useState } from "react";
 
 const Delivery: React.FC = () => {

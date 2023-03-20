@@ -4,7 +4,7 @@ import { ICategory } from "../../../types/ICategory";
 
 export const getCategories = createAsyncThunk(
     "category/get/all",
-    async function () {
+    async () => {
         const res = await baseService.get<ICategory[]>("/categories")
         return res.data
     }
@@ -12,7 +12,7 @@ export const getCategories = createAsyncThunk(
 
 export const getCategoryById = createAsyncThunk(
     "category/get",
-    async function (id) {
+    async (id) => {
         const res = await baseService.get<ICategory>(`/categories/${id}`)
         return res.data
     }

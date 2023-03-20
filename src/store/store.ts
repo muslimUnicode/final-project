@@ -1,22 +1,26 @@
 import { configureStore, ThunkAction, Action, combineReducers } from '@reduxjs/toolkit';
 import basketSlice from './reducers/basket/basketSlice';
+import categoriesSlice from './reducers/categories/categoriesSlice';
+import foodsSlice from './reducers/foods/foodsSlice';
 import userSlice from './reducers/user/userSlice';
 
 const rootReducer = combineReducers({
-  user: userSlice,
-  basket: basketSlice,
+    user: userSlice,
+    basket: basketSlice,
+    categories: categoriesSlice,
+    foods: foodsSlice,
 })
 
 export const store = configureStore({
-  reducer: rootReducer,
-  devTools: true
+    reducer: rootReducer,
+    devTools: true
 });
 
 export type AppDispatch = typeof store.dispatch;
 export type RootState = ReturnType<typeof store.getState>;
 export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
+    ReturnType,
+    RootState,
+    unknown,
+    Action<string>
 >;
