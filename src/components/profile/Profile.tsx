@@ -2,7 +2,7 @@ import "./Profile.scss"
 import stub from '../../assets/stub.png';
 
 
-const Profile = ({setContent}) => {
+const Profile: React.FC<any> = ({setContent}) => {
   
     return (
       <div className="profile">

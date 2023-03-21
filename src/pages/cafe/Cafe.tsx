@@ -8,7 +8,7 @@ import { useState } from 'react';
 
 const Cafe = () => {
 
-    const [content, setContent] = useState(0);
+    const [content, setContent] = useState<number>(0);
 
     return (
         <div className='cafe'>
