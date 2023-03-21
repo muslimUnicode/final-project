@@ -1,18 +1,20 @@
 import { useForm } from "react-hook-form"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import Input from "../../components/input/Input"
 import SignButton from "../../components/sign-button/SignButton"
 import { useAppDispatch } from "../../hooks/hooks"
-import { clientSignIn } from "../../store/reducers/clients/clientsAction"
-import { IAuth } from "../../types/IAuth"
+import { userSignIn } from "../../store/reducers/user/userAction"
+import { IAuth } from "../../types/IUser"
 import "./SignIn.scss"
 
 const SignIn = () => {
     const { register, handleSubmit, formState: {errors, isValid}, reset } = useForm<IAuth>()
     const dispatch = useAppDispatch()
+    const navigate = useNavigate()
 
     const onSubmit = (data: IAuth) => {
-        dispatch(clientSignIn(data))
+        dispatch(userSignIn(data))
+        navigate("/")
     }
     
     return(

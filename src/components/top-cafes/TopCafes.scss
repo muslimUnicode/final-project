@@ -1,0 +1,41 @@
+.top-cafes {
+    padding: 47px 40px;
+    padding-bottom: 48px;
+
+    h2 {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        border-left: 4px solid #618967;
+    }
+
+    .reviews__list {
+        width: 1364px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: auto;
+    }
+
+    button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto 0;
+        width: 720px;
+        height: 59px;
+        background: #618967;
+        border-radius: 15px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 30px;
+        color: #ffffff;
+        border: 0;
+        cursor: pointer;
+    }
+}

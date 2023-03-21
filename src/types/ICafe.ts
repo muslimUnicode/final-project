@@ -1,5 +1,3 @@
-import { IFood } from "./IFood";
-
 export interface ICafe {
     _id: string,
     name: string,
@@ -8,13 +6,12 @@ export interface ICafe {
     city: string,
     address: string,
     mail: string,
-    password:string,
+    password: string,
     role: string,
-    menu: IFood[],
+    menu: [],
 }
 
-export type CafeState = {
-    user: ICafe,
+export type CafesState = {
+    cafes: ICafe[],
     isLoading: boolean,
-    isAuth: boolean,
 }
