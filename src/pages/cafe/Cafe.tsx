@@ -14,10 +14,10 @@ const Cafe = () => {
         <div className='cafe'>
             <Header />
             <div className='cafe__content'>
-                <Profile />
-                <CafeOrders />
-                <CafeMenu />
-                <CafeInfo />
+                <Profile setContent={setContent} />
+                {content === 0 && <CafeOrders /> ||
+                content === 1 && <CafeMenu /> ||
+                content === 2 && <CafeInfo />}
             </div>
         </div>
     );
