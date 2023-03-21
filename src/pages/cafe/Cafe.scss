@@ -1,0 +1,14 @@
+.cafe {
+    font-family: "Gilroy";
+    color: #ffffff;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
+
+    .cafe__content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        margin-left: 37px;
+    }
+}

@@ -31,7 +31,7 @@ const Header = () => {
                     <span>+7 (917) 510-57-59</span>
                 </p>
             </div>
-            <div className="profile" onClick={() => navigate("/sign-in")}>
+            <div className="header-profile" onClick={() => navigate("/sign-in")}>
                 <img src={profile} alt="" />
                 <button>Войти</button>
             </div>
