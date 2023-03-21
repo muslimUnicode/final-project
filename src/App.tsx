@@ -7,6 +7,7 @@ import Ordering from "./pages/ordering/Ordering";
 import SignIn from "./pages/sign-in/SignIn";
 import SignUpCafe from "./pages/sign-up-cafe/SignUpCafe";
 import SignUpClient from "./pages/sign-up-client/SignUpClient";
+import Cafe from "./pages/cafe/Cafe";
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                 <Route path="/sign-up-client" element={<SignUpClient />} />
                 <Route path="/sign-up-cafe" element={<SignUpCafe />} />
                 <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/cafe" element={<Cafe />} />
             </Routes>
         </div>
     )
