@@ -12,7 +12,7 @@ const Cafe = () => {
             <div className='cafe__content'>
                 <Profile />
                 <CafeOrders />
-                <CafeMenu /> 
+                <CafeMenu />
                 <CafeInfo />
             </div>
         </div>
