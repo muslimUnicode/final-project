@@ -4,8 +4,10 @@ import search from '../../assets/search.svg';
 import calling from '../../assets/calling.svg';
 import profile from "../../assets/profile.svg";
 import { useNavigate } from "react-router-dom";
+import { useAppSelector } from "../../hooks/hooks";
 
 const Header = () => {
+    const { dishes } = useAppSelector(state => state.basket)
     const navigate = useNavigate()
 
   return (
@@ -36,7 +38,7 @@ const Header = () => {
                 <button>Войти</button>
             </div>
             <button className="basket" onClick={() => navigate("/basket")}>
-                Корзина<span className="vert__line"></span><span className="quantity">4</span>
+                Корзина<span className="vert__line"></span><span className="quantity">{dishes.length}</span>
             </button>
         </header>
     </div>

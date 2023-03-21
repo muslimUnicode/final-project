@@ -1,9 +1,9 @@
 import { IFood } from "./IFood"
 
-export interface IDishes extends IFood {
+export interface IDish extends IFood {
     count: number
 }
 
 export type BasketState = {
-    dishes: IDishes[]
+    dishes: IDish[]
 }

@@ -6,6 +6,7 @@ export interface IFood {
     categoryId: string,
     price: number,
     cafeId: string,
+    count: number,
 }
 
 export type FoodsState = {

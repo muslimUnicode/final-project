@@ -71,11 +71,55 @@
                 color: #fff;
                 background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
                 border-radius: 10px;
+                cursor: pointer;
                 
                 img {
                     margin-left: 12px;
                     width: 18px;
                     height: 15px;
+                }
+            }
+        }
+
+        .increase-dish {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            width: 285px;
+
+            .minus {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 62px;
+                height: 44px;
+                background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                border-radius: 10px;
+                cursor: pointer;
+                
+                img {
+                    height: 3px;
+                    width: 18px;
+                    border-radius: 20px;
+                }
+            }
+            
+            .plus {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 62px;
+                height: 44px;
+                background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                border-radius: 10px;
+                cursor: pointer;
+
+                img {
+                    height: 18px;
+                    width: 18px;
+                    border-radius: 20px;
                 }
             }
         }
