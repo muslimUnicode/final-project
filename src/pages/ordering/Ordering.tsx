@@ -31,7 +31,7 @@ const Ordering = () => {
                         <div className="block-name">3. Оплатить</div>
                         <div className="payment-types">
                             <div className="payment-type type-1">
-                                <input id="payment-radio-1" type="radio" name="payment-radio" />
+                                <input id="payment-radio-1" type="radio" name="payment-radio" defaultChecked />
                                 <label htmlFor="payment-radio-1">Оплата онлайн</label>
                             </div>
                             
@@ -52,7 +52,7 @@ const Ordering = () => {
                         <div className="delivery-time">
                             <div className="radio-buttons">
                                 <div className="select-time type-1">
-                                    <input id="delivery-radio-1" type="radio" name="delivery-radio" />
+                                    <input id="delivery-radio-1" type="radio" name="delivery-radio" defaultChecked />
                                     <label htmlFor="delivery-radio-1">В ближайшее время</label>
                                 </div>
                                 <div className="select-time type-2">

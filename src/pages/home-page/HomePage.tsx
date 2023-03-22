@@ -24,6 +24,7 @@ const HomePage = () => {
             <TopCafes />
             <Categories />
             <Footer />
+            {/* <div className="toner"/> */}
         </div>
     );
 };

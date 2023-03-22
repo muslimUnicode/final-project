@@ -6,11 +6,31 @@
     background: linear-gradient(90deg, #494544 0%, #504b4a 100%);
     border-radius: 10px;
     color: #fff;
+    position: relative;
 
     img {
         height: 227px;
         width: 325px;
         border-radius: 10px;
+    }
+
+    .count {
+        width: 50px;
+        height: 50px;
+        background: #79B382;
+        border-radius: 50px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 25px;
+        }
     }
 
     .card__descr {
