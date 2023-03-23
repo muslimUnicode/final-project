@@ -36,6 +36,7 @@ function App() {
                 <Route path="/sign-up-client" element={<SignUpClient />} />
                 <Route path="/sign-up-cafe" element={<SignUpCafe />} />
                 <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/cafe" element={<Cafe />} />
             </Routes>
         </div>
     )

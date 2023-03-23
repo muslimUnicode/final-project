@@ -1,0 +1,36 @@
+.profile {
+    margin-top: 28px;
+    margin-left: 43px;
+    margin-right: 65px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.03em;
+    }
+
+    button {
+        margin-top: 23px;
+        width: 432px;
+        height: 60px;
+        border-radius: 10px;
+        border: 0;
+        background: 0;
+        font-family: "Gilroy";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 38px;
+        letter-spacing: 0.03em;
+        color: #fff;
+    }
+    
+    button:focus {
+        background: linear-gradient(114.93deg, #618967 5.11%, #72a479 94%);
+    }
+}
