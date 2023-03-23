@@ -1,0 +1,240 @@
+.sign-up-client {
+    width: 100%;
+    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+    padding: 107px 0 94px;
+
+    .sign-up-client-block {
+        margin: auto;
+        padding: 42px;
+        width: 750px;
+        background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+        border-radius: 20px;
+
+        .navlinks {
+            display: flex;
+            justify-content: center;
+    
+            .active-navlink {
+                margin: 0 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 224px;
+                height: 85px;
+                background: linear-gradient(180deg, #618967 0%, #72A479 100%);
+                border: 1px solid #618967;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+            
+            .inactive-navlink {
+                margin: 0 4px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+                width: 224px;
+                height: 85px;
+                border: 1px solid #618967;
+                border-radius: 10px;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 27px;
+                color: #FFFFFF;
+            }
+        }
+
+        .already-have-account {
+            margin: 11px auto 40px;
+            text-align: center;
+
+            span {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: rgba(255, 255, 255, 0.5);
+                margin-right: 0.3em;
+            }
+
+            .link {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+            }
+        }
+
+        h1 {
+            margin: 0 0 35px;
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 54px;
+            letter-spacing: 0.05em;
+            color: #FFFFFF;
+        }
+
+        form {
+            
+            h4 {
+                margin: 24px 0 17px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+            
+            input {
+                width: 355px;
+                height: 52px;
+                background: #504B4A;
+                border: 1px solid #706F6F;
+                border-radius: 15px;
+            }
+
+            button {
+                margin: 60px 60px 341px;
+                text-align: center;
+                border: none;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 27px;
+                color: #FFFFFF;
+                width: 247px;
+                height: 60px;
+                background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media (max-width: 376px) {
+    .sign-up-client {
+        width: 100%;
+        background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+        padding: 0;
+    
+        .sign-up-client-block {
+            margin: auto;
+            padding: 24px;
+            width: 100%;
+            background: 0;
+            border-radius: 20px;
+    
+            .navlinks {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+        
+                .active-navlink {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    margin: 8px 0;
+                    width: 224px;
+                    height: 85px;
+                    background: linear-gradient(180deg, #618967 0%, #72A479 100%);
+                    border: 1px solid #618967;
+                    border-radius: 10px;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+                
+                .inactive-navlink {
+                    margin: 8px 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    width: 224px;
+                    height: 85px;
+                    border: 1px solid #618967;
+                    border-radius: 10px;
+                    font-family: 'Inter';
+                    font-weight: 600;
+                    font-size: 22px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                }
+            }
+    
+            .already-have-account {
+                margin: 11px auto 40px;
+                text-align: center;
+    
+                span {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: rgba(255, 255, 255, 0.5);
+                    margin-right: 0.3em;
+                }
+    
+                .link {
+                    text-decoration: none;
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #FFFFFF;
+                }
+            }
+    
+            h1 {
+                display: none;
+                margin: 0 0 35px;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 54px;
+                letter-spacing: 0.05em;
+                color: #FFFFFF;
+            }
+    
+            form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h4 {
+                    margin: 24px 0 17px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+                
+                input {
+                    width: 277px;
+                    height: 52px;
+                    background: #504B4A;
+                    border: 1px solid #706F6F;
+                    border-radius: 15px;
+                }
+    
+                button {
+                    margin: 60px 60px 45px;
+                    text-align: center;
+                    border: none;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+                    color: #FFFFFF;
+                    width: 247px;
+                    height: 60px;
+                    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

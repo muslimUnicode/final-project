@@ -1,0 +1,200 @@
+.basket {
+    width: 1440px;
+    margin: auto;
+    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);
+
+    .wrapper {
+        padding: 112px 172px 24px;
+        
+        .upper-block {
+            margin-left: 146px;
+            
+            .back-to-dishes {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                width: fit-content;
+            
+                span {
+                    margin-left: 5px;
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: #FFFFFF;
+                }
+            }
+    
+            .about-basket {
+                display: flex;
+                align-items: center;
+                margin: 22px 0 75px;
+    
+                .stick {
+                    width: 4px;
+                    height: 33px;
+                    background: #618967;
+                }
+    
+                .basket-word {
+                    font-weight: 700;
+                    font-size: 32px;
+                    line-height: 39px;
+                    color: #FFFFFF;
+                    margin: 0 15px 0 19px;
+                }
+    
+                .basket-number {
+                    margin-top: 8px;
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: #72A479;
+                }
+            }
+        }
+
+        .order {
+            width: 1096px;
+            background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+            border-radius: 10px;
+
+            .dish {
+                position: relative;
+                padding: 22px 42px 22px 22px;
+                display: flex;
+                align-items: center;
+
+                .dish-image {
+                    width: 117px;
+                    height: 86px;
+                }
+
+                .about-dish {
+                    height: 86px;
+                    width: 490px;
+
+                    .dish-name {
+                        margin: 9px 0 0 39px;
+                        width: 400px;
+                        font-weight: 700;
+                        font-size: 18px;
+                        line-height: 22px;
+                        color: #FFFFFF;
+                    }
+
+                    .dish-info {
+                        margin: 4px 223px 0 39px;
+                        width: 265px;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #A6A7AB;
+                    }
+                }
+
+                .dish-number {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 26px;
+                    color: #FFFFFF;
+
+                    img {
+                        cursor: pointer;
+                    }
+                }
+
+                .dish-price {
+                    margin: 0 71px 0 125px;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                }
+
+                .delete-dish {
+                    width: 27px;
+                    height: 27px;
+                    cursor: pointer;
+                }
+
+                .hr {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 1096px;
+                    height: 1px;
+                    background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+                }
+            }
+        }
+
+        .total-block {
+            padding: 27px 27px 11px 39px;
+            margin: 36px auto 0;
+            width: 763px;
+            height: 105px;
+            background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .info {
+
+                .total {
+
+                    span {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #A6A7AB;
+
+                        .total-number {
+                            font-weight: 700;
+                            font-size: 25px;
+                            line-height: 30px;
+                            color: white;
+                        }
+                    }
+                }
+
+                .free-delivery {
+
+                    span {
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #FFFFFF;
+
+                        .green {
+                            color: #72A479;
+                        }
+                    }
+                }
+
+                .min-price {
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                }
+            }
+
+            .checkout {
+                text-decoration: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 17px;
+                color: #FFFFFF;
+                width: 209px;
+                height: 51px;
+                background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+}

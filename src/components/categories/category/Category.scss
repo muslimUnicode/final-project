@@ -1,0 +1,36 @@
+.category {
+    padding: 40px 40px;
+    padding-bottom: 48px;
+    position: relative;
+
+    .hr {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1440px;
+        height: 1px;
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.2) 100%);
+    }
+
+    h2 {
+        padding-left: 20px;
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #ffffff;
+        border-left: 4px solid #618967;
+    }
+
+    .cards__list {
+        display: flex;
+        overflow-x: auto;
+        padding-top: 10px;
+
+        &::-webkit-scrollbar {
+            height: 0;
+        }
+    }
+}

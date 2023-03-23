@@ -1,0 +1,10 @@
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.4;
+    background: #fff;
+    color: #444;
+}
+
+.app {
+    max-width: 1440px;
+}
