@@ -4,8 +4,11 @@ import search from '../../assets/search.svg';
 import calling from '../../assets/calling.svg';
 import profile from "../../assets/profile.svg";
 import { useNavigate } from "react-router-dom";
+import { useAppSelector } from "../../hooks/hooks";
 
 const Header = () => {
+    const { dishes } = useAppSelector(state => state.basket)
+    const { isAuth } = useAppSelector(state => state.user)
     const navigate = useNavigate()
 
   return (
@@ -31,13 +34,29 @@ const Header = () => {
                     <span>+7 (917) 510-57-59</span>
                 </p>
             </div>
-            <div className="header-profile" onClick={() => navigate("/sign-in")}>
-                <img src={profile} alt="" />
-                <button>Войти</button>
-            </div>
-            <button className="basket" onClick={() => navigate("/basket")}>
-                Корзина<span className="vert__line"></span><span className="quantity">4</span>
-            </button>
+            {isAuth
+                ? <div className="is-auth">
+                    <div className="profile" onClick={() => navigate("/sign-in")}>
+                        <img src={profile} alt="" />
+                        <button>Войти</button>
+                    </div>
+                    <button className="basket" onClick={() => navigate("/basket")}>
+                        Корзина<span className="vert__line"></span><span className="quantity">{dishes.length}</span>
+                    </button>
+                    <button className="profile-button" onClick={() => navigate("profile")}>
+                        Личный кабинет
+                    </button>
+                </div>
+                : <div className="is-not-auth">
+                    <div className="profile" onClick={() => navigate("/sign-in")}>
+                        <img src={profile} alt="" />
+                        <button>Войти</button>
+                    </div>
+                    <button className="basket" onClick={() => navigate("/basket")}>
+                        Корзина<span className="vert__line"></span><span className="quantity">{dishes.length}</span>
+                    </button>
+                </div>
+            }
         </header>
     </div>
   );

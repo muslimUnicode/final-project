@@ -71,9 +71,11 @@
 
                 .about-dish {
                     height: 86px;
+                    width: 490px;
 
                     .dish-name {
                         margin: 9px 0 0 39px;
+                        width: 400px;
                         font-weight: 700;
                         font-size: 18px;
                         line-height: 22px;
@@ -96,6 +98,10 @@
                     font-size: 20px;
                     line-height: 26px;
                     color: #FFFFFF;
+
+                    img {
+                        cursor: pointer;
+                    }
                 }
 
                 .dish-price {

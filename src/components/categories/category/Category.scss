@@ -26,5 +26,11 @@
 
     .cards__list {
         display: flex;
+        overflow-x: auto;
+        padding-top: 10px;
+
+        &::-webkit-scrollbar {
+            height: 0;
+        }
     }
 }

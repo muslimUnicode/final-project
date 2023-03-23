@@ -1,5 +1,5 @@
-import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import { Route, Routes } from "react-router-dom";
 import Delivery from "./pages/delivery/Delivery";
 import Basket from "./pages/basket/Basket";
 import HomePage from "./pages/home-page/HomePage";
@@ -7,9 +7,25 @@ import Ordering from "./pages/ordering/Ordering";
 import SignIn from "./pages/sign-in/SignIn";
 import SignUpCafe from "./pages/sign-up-cafe/SignUpCafe";
 import SignUpClient from "./pages/sign-up-client/SignUpClient";
-import Cafe from "./pages/cafe/Cafe";
+import { useEffect } from "react";
+import { setToken } from "./api/api";
+import { useAppDispatch } from "./hooks/hooks";
+import { getUser } from "./store/reducers/user/userAction";
+import Cookies from "js-cookie";
 
 function App() {
+    const dispatch = useAppDispatch();
+    const token = Cookies.get("token") || null
+
+    const handleGetUser = async () => { 
+        setToken();
+        token && dispatch(getUser());
+    };
+
+    useEffect(() => {
+        handleGetUser()
+    }, []);
+
     return (
         <div className="App">
             <Routes>

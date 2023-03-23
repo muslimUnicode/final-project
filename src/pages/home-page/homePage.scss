@@ -2,3 +2,11 @@
     min-height: 100vh;
     background: linear-gradient(360deg, #211f20 0%, #44403f 100%);
 }
+
+.toner {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 282px;
+    background: linear-gradient(180deg, rgba(59, 56, 55, 0) 0%, #3B3837 100%);
+}

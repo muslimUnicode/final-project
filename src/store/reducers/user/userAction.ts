@@ -18,6 +18,14 @@ export const userSignIn = createAsyncThunk<{token: string, id: string, role: str
     }
 )
 
+export const getUser = createAsyncThunk(
+    "user/get",
+    async () => {
+        const res = await baseService.get("/client/profile/user")
+        return res.data
+    }
+)
+
 export const getCafes = createAsyncThunk(
     "cafe/get",
     async () => {
